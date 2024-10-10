@@ -6,7 +6,6 @@ describe('Amazon Samsung TV Filter Test', () => {
     });
 
     it('should filter Samsung TVs and log the About This Item section', () => {
-        // AmazonPage.visit();
         AmazonPage.clickHamburgerMenu();
         AmazonPage.selectCategory('TV, Appliances, Electronics');
         AmazonPage.selectCategory('Televisions');
