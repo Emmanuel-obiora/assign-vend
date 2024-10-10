@@ -8,6 +8,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {},
     baseUrl: 'https://www.amazon.in',
+    api: 'https://reqres.in/api',
     supportFile: false,
     screenshotsFolder: 'my-custom-folder/screenshots',
   },

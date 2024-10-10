@@ -1,8 +1,9 @@
-// cypress/pageObjects/AmazonPage.js
+
 class AmazonPage {
 
     visit() {
-        cy.visit('https://www.amazon.in/');
+        const baseUrl = Cypress.config('baseUrl');
+        cy.visit(baseUrl);
     }
 
     clickHamburgerMenu() {

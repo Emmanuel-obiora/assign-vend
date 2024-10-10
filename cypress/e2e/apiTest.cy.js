@@ -1,13 +1,12 @@
-// cypress/integration/apiTest.cy.js
+import testData from '../fixtures/data.json';
+
+
 describe('Reqres API User Creation Test', () => {
-    const testData = [
-        { "name": "admin", "job": "admin" },
-        { "name": "ronaldo", "job": "player" }
-    ];
+    const endPoint = Cypress.config('api');
 
     testData.forEach(data => {
         it(`should create user ${data.name} and validate response`, () => {
-            cy.request('POST', 'https://reqres.in/api/users', data)
+            cy.request('POST', `${endPoint}/users`, data)
                 .then((response) => {
                     // Assert response code
                     expect(response.status).to.equal(201);
