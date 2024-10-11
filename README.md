@@ -19,7 +19,7 @@ This test suite is:
 
 #### **Test Description:**
 This test automates the process of selecting a product from Amazon based on specific filters (Samsung brand televisions). The test involves:
-1. Navigating to [Amazon India](https://www.amazon.in).
+1. Navigating to [Amazon](https://www.amazon.in).
 2. Clicking the hamburger menu to open the main navigation.
 3. Navigating to the **TV, Appliances, and Electronics** section and selecting **Televisions**.
 4. Filtering the television results by **Samsung** brand.
